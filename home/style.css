@@ -799,6 +799,199 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
+/* Blog Section Styles */
+.sol-home-blog-section {
+    background-color: #fff;
+}
+
+.sol-home-blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sol-home-blog-header-title {
+    font-family: var(--sol-home-font-roboto);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--sol-home-primary);
+    margin: 0;
+}
+
+.sol-home-blog-view-all {
+    color: var(--sol-home-primary);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-blog-view-all:hover {
+    opacity: 0.8;
+}
+
+.sol-home-blog-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--sol-home-transition);
+    border: 1px solid #f1f5f9;
+}
+
+.sol-home-blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sol-home-blog-img-wrapper {
+    padding: 12px;
+}
+
+.sol-home-blog-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.sol-home-blog-meta {
+    padding: 0 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sol-home-blog-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sol-home-blog-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+}
+
+.sol-home-blog-author-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #475569;
+    margin: 0;
+}
+
+.sol-home-blog-date {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-right: 15px;
+}
+
+.sol-home-blog-share-btn {
+    width: 32px;
+    height: 32px;
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--sol-home-transition);
+    border: none;
+}
+
+.sol-home-blog-share-btn:hover {
+    background-color: var(--sol-home-accent);
+}
+
+.sol-home-blog-content-wrapper {
+    padding: 0 20px 20px;
+}
+
+.sol-home-blog-body {
+    background-color: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.sol-home-blog-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--sol-home-primary);
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.sol-home-blog-excerpt {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sol-home-blog-tag-link {
+    color: #1e293b;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.sol-home-blog-see-more {
+    color: var(--sol-home-primary);
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.sol-home-blog-swiper {
+    padding: 20px 0 50px !important;
+}
+
+.sol-home-blog-swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: var(--sol-home-primary);
+    opacity: 0.2;
+}
+
+.sol-home-blog-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 25px;
+    border-radius: 4px;
+}
+
+@media (max-width: 767.98px) {
+    .sol-home-blog-header-title {
+        font-size: 2.2rem;
+    }
+    
+    .sol-home-blog-view-all {
+        font-size: 1rem;
+    }
+
+    .sol-home-blog-card {
+        margin: 5px;
+    }
+
+    .sol-home-blog-body {
+        padding: 15px;
+    }
+
+    .sol-home-blog-title {
+        font-size: 1.1rem;
+    }
+}
+
 .sol-home-testimonial-img {
     width: 250px;
     height: 300px;
