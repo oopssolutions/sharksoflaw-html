@@ -1,0 +1,983 @@
+:root {
+    --sol-home-primary: #1a1e4a;
+    --sol-home-secondary: #ffffff;
+    --sol-home-accent: #2c316a;
+    --sol-home-text-dark: #1a1e4a;
+    --sol-home-text-muted: #64748b;
+    --sol-home-bg-light: #EBF1FD;
+    --sol-home-font-dm: 'DM Sans', sans-serif;
+    --sol-home-font-playfair: 'Playfair Display', serif;
+    --sol-home-font-poppins: 'Poppins', sans-serif;
+    --sol-home-font-roboto: 'Roboto', sans-serif;
+    --sol-home-transition: all 0.3s ease;
+}
+
+body {
+    font-family: var(--sol-home-font-roboto);
+    color: var(--sol-home-text-dark);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Global Container Utility for Mobile */
+@media (max-width: 767.98px) {
+    .container-fluid.px-5 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* Header Styles */
+.navbar {
+    padding: 0.8rem 0;
+    background-color: var(--sol-home-secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--sol-home-text-dark) !important;
+    margin: 0 0.8rem;
+}
+
+.sol-home-consult-btn {
+    border: 1px solid #e2e8f0;
+    color: var(--sol-home-text-dark);
+    padding: 10px 25px;
+    font-weight: 700;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-consult-btn i {
+    width: 28px;
+    height: 28px;
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.sol-home-consult-btn:hover {
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    border-color: var(--sol-home-primary);
+}
+
+.sol-home-consult-btn:hover i {
+    background-color: #fff;
+    color: var(--sol-home-primary);
+}
+
+/* Hero Section Styles */
+.sol-home-hero-section {
+    background-color: var(--sol-home-bg-light);
+    padding: 60px 0 0 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+/* .sol-home-hero-content {
+    margin-bottom: 50px;
+} */
+
+.sol-home-hero-title {
+    font-family: var(--sol-home-font-roboto);
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: var(--sol-home-primary);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+    .sol-home-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .sol-home-hero-highlight {
+        font-size: 1.3rem;
+    }
+
+    .sol-home-platform-text {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .sol-home-hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sol-home-btn-primary,
+    .sol-home-btn-outline {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .sol-home-hero-section {
+        padding-top: 40px;
+    }
+}
+
+.sol-home-hero-title span {
+    color: #2c316a;
+    font-weight: 400;
+    display: block;
+    margin-top: 5px;
+}
+
+.sol-home-hero-highlight {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.sol-home-platform-text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.sol-home-hero-subtitle {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    line-height: 1.4;
+}
+
+.sol-home-hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.sol-home-btn-primary {
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-btn-outline {
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-btn-primary:hover,
+.sol-home-btn-outline:hover {
+    background-color: var(--sol-home-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(26, 30, 74, 0.2);
+}
+
+.sol-home-hero-image-wrapper {
+    text-align: right;
+    margin-top: -30px;
+}
+
+.sol-home-hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Offcanvas Customization */
+.offcanvas {
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    width: 280px !important;
+}
+
+.offcanvas .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+.offcanvas-header .btn-close {
+    filter: invert(1);
+}
+
+@media (max-width: 991.98px) {
+    .sol-home-hero-section {
+        padding: 40px 0;
+    }
+
+    .sol-home-hero-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .sol-home-hero-highlight,
+    .sol-home-platform-text {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .sol-home-hero-subtitle {
+        text-align: center;
+        margin: 0 auto 2rem;
+        font-size: 1.2rem;
+    }
+
+    .sol-home-hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sol-home-hero-image-wrapper {
+        text-align: center;
+    }
+}
+
+/* How It Works Section Styles */
+.sol-home-how-it-works-section {
+    background-color: var(--sol-home-bg-light);
+    /* padding: 50px 0; */
+}
+
+.sol-home-section-title {
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--sol-home-primary);
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    .sol-home-section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+}
+
+.sol-home-text-bold {
+    font-weight: 700;
+}
+
+.sol-home-work-card {
+    background-color: #fff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.sol-home-work-card-number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--sol-home-primary);
+    margin-right: 20px;
+    line-height: 1;
+}
+
+.sol-home-work-card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--sol-home-primary);
+    margin-bottom: 5px;
+}
+
+.sol-home-work-card-text {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 767.98px) {
+    .sol-home-section-title {
+        font-size: 2.2rem;
+    }
+
+    .sol-home-work-card {
+        padding: 25px;
+    }
+
+    .sol-home-work-card-number {
+        font-size: 2.8rem;
+    }
+}
+
+/* Services Section Styles */
+.sol-home-services-section {
+    background-color: var(--sol-home-bg-light);
+    padding: 50px 0;
+}
+
+.sol-home-service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--sol-home-transition);
+    cursor: pointer;
+    border: none;
+}
+
+.sol-home-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.sol-home-service-card-img {
+    width: 80%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.sol-home-service-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--sol-home-primary);
+    margin-bottom: 0;
+}
+
+.sol-home-more-options-icon {
+    font-size: 2.5rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991.98px) {
+    .sol-home-service-card-img {
+        max-height: 90px;
+    }
+
+    .sol-home-service-card-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sol-home-services-section {
+        padding: 40px 0;
+    }
+
+    .sol-home-service-card {
+        padding: 15px;
+    }
+}
+
+/* Experts Section Styles */
+.sol-home-experts-section {
+    background-color: var(--sol-home-bg-light);
+    /* padding: 60px 0; */
+}
+
+.sol-home-expert-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    display: flex;
+    gap: 15px;
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-expert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.sol-home-expert-left {
+    flex: 0 0 100px;
+    text-align: center;
+}
+
+.sol-home-expert-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #f1f3f7;
+}
+
+.sol-home-expert-rating {
+    color: #ffc107;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.sol-home-expert-consults {
+    font-size: 0.7rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.sol-home-expert-right {
+    flex: 1;
+}
+
+.sol-home-expert-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.sol-home-expert-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--sol-home-primary);
+    margin: 0;
+}
+
+.sol-home-expert-verified {
+    color: #3b82f6;
+    font-size: 0.9rem;
+}
+
+.sol-home-expert-specialization {
+    font-size: 0.85rem;
+    color: #475569;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.sol-home-expert-languages {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.sol-home-expert-exp {
+    font-size: 0.9rem;
+    color: var(--sol-home-primary);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.sol-home-expert-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.sol-home-expert-pricing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sol-home-price-free {
+    color: #3b82f6;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.sol-home-price-old {
+    text-decoration: line-through;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.sol-home-consult-now-btn {
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-consult-now-btn:hover {
+    background-color: var(--sol-home-accent);
+}
+
+@media (max-width: 575.98px) {
+    .sol-home-expert-card {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .sol-home-expert-left {
+        flex: 0 0 70px;
+    }
+
+    .sol-home-expert-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .sol-home-expert-name {
+        font-size: 0.9rem;
+    }
+
+    .sol-home-expert-specialization,
+    .sol-home-expert-languages {
+        font-size: 0.75rem;
+    }
+
+    .sol-home-consult-now-btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Swiper Styling for Recommended Section */
+.sol-home-recommended-swiper {
+    padding-bottom: 20px !important;
+    padding-top: 10px;
+}
+
+.sol-home-recommended-swiper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: var(--sol-home-primary);
+    opacity: 0.2;
+}
+
+.sol-home-recommended-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Swiper Navigation Custom Styles (Shared or Specific) */
+.sol-rec-swiper-button {
+    color: var(--sol-home-primary) !important;
+    background: #fff;
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.sol-rec-swiper-button::after {
+    font-size: 1.2rem !important;
+    font-weight: 800;
+}
+
+.sol-rec-swiper-button:hover {
+    background: var(--sol-home-primary);
+    color: #fff !important;
+    transform: scale(1.1);
+}
+
+@media (max-width: 991.98px) {
+    .sol-rec-swiper-button {
+        display: none !important;
+    }
+}
+
+/* Recommended Lawyers Section Styles */
+.sol-home-recommended-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.sol-home-rec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sol-home-filter-icon {
+    font-size: 1.8rem;
+    color: var(--sol-home-primary);
+    cursor: pointer;
+}
+
+.sol-home-rec-card {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 25px 20px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-rec-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sol-home-rec-badge {
+    position: absolute;
+    top: 15px;
+    left: -35px;
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    padding: 5px 40px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transform: rotate(-45deg);
+    z-index: 2;
+}
+
+.sol-home-rec-img-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.sol-home-rec-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--sol-home-primary);
+}
+
+.sol-home-rec-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--sol-home-primary);
+    margin-bottom: 10px;
+}
+
+.sol-home-rec-specialization {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.sol-home-rec-languages {
+    font-size: 1rem;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.sol-home-rec-old-price {
+    text-decoration: line-through;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.sol-home-rec-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.sol-home-rec-new-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000;
+}
+
+@media (max-width: 767.98px) {
+    .sol-home-rec-card {
+        padding: 12px 10px;
+    }
+
+    .sol-home-rec-img-wrapper {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 10px;
+    }
+
+    .sol-home-rec-name {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+
+    .sol-home-rec-specialization,
+    .sol-home-rec-languages {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+    }
+
+    .sol-home-rec-old-price {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .sol-home-rec-new-price {
+        font-size: 1.1rem;
+    }
+
+    .sol-home-rec-footer .sol-home-consult-now-btn {
+        padding: 5px 10px;
+        font-size: 0.65rem;
+    }
+
+    .sol-home-rec-badge {
+        font-size: 0.55rem;
+        padding: 3px 25px;
+        left: -25px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sol-home-rec-name {
+        font-size: 1.2rem;
+    }
+
+    .sol-home-rec-new-price {
+        font-size: 1.4rem;
+    }
+}
+
+/* Contact Section & Testimonials */
+.sol-home-contact-section {
+    background-color: var(--sol-home-bg-light);
+    /* padding: 80px 0; */
+}
+
+.sol-home-contact-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--sol-home-primary);
+    margin-bottom: 50px;
+}
+
+.sol-home-testimonial-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.sol-home-testimonial-img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sol-home-testimonial-content {
+    flex: 1;
+    padding: 30px 20px 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sol-home-quote-icon {
+    background-color: #f8fafc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--sol-home-primary);
+    font-size: 1.2rem;
+}
+
+.sol-home-testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sol-home-testimonial-author {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: auto;
+}
+
+.sol-home-testimonial-role {
+    font-size: 1rem;
+    color: #947a50;
+    font-weight: 600;
+}
+
+.sol-home-inquiry-box {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 40px;
+    height: 100%;
+}
+
+.sol-home-inquiry-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.sol-home-form-control {
+    background-color: #f1f5f9;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sol-home-inquiry-btn {
+    width: 100%;
+    background-color: var(--sol-home-primary);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-inquiry-btn:hover {
+    background-color: var(--sol-home-accent);
+}
+
+/* Footer Styles */
+.sol-home-footer {
+    background-color: var(--sol-home-primary);
+    padding: 30px 0;
+    color: #fff;
+}
+
+.sol-home-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sol-home-footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sol-home-footer-logo img {
+    height: 40px;
+}
+
+.sol-home-footer-brand-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.sol-home-footer-links {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.sol-home-footer-links span {
+    margin: 0 10px;
+    opacity: 0.5;
+}
+
+@media (min-width: 992px) {
+    .sol-home-footer .text-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left !important;
+    }
+
+    .sol-home-footer-logo {
+        margin-bottom: 0 !important;
+        justify-content: flex-start !important;
+    }
+}
+
+.sol-home-whatsapp-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--sol-home-transition);
+}
+
+.sol-home-whatsapp-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.sol-home-whatsapp-btn i {
+    color: #25d366;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 767.98px) {
+    .sol-home-testimonial-card {
+        flex-direction: column;
+    }
+
+    .sol-home-testimonial-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sol-home-footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
