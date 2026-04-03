@@ -809,7 +809,7 @@
 
         <!-- Contact & Testimonials Section -->
         <section class="sol-home-contact-section pt-3">
-            <div class="container-fluid px-5 py-3">
+            <div class="container-fluid px-5 py-4">
                 <div class="text-center">
                     <h2 class="sol-home-section-title"><span class="sol-home-text-bold">Reach out to us</span> - we'll
                         get back to you shortly.</h2>
@@ -818,22 +818,30 @@
                 <div class="row g-5 align-items-stretch">
                     <!-- Left: Testimonials Slideshow -->
                     <div class="col-lg-7">
-                        <div id="solHomeTestimonialCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div id="solHomeTestimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <!-- Carousel Indicators (Dots) -->
+                            <div class="carousel-indicators sol-home-testimonial-dots">
+                                <button type="button" data-bs-target="#solHomeTestimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#solHomeTestimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            
                             <div class="carousel-inner h-100">
                                 <!-- Slide 1 -->
-                                <div class="carousel-item active h-100">
-                                    <div class="sol-home-testimonial-card">
-                                        <img src="img/testimonial.jpg" alt="Kirsten Gutierrez"
-                                            class="sol-home-testimonial-img">
-                                        <div class="sol-home-testimonial-content">
-                                            <div class="sol-home-quote-icon">
+                                <div class="carousel-item active">
+                                    <div class="sol-home-testimonial-card-centered text-center">
+                                        <div class="sol-home-testimonial-img-wrapper mb-4">
+                                            <img src="https://i.pravatar.cc/150?u=a" alt="Kirsten Gutierrez"
+                                                class="sol-home-testimonial-img">
+                                        </div>
+                                        <div class="sol-home-testimonial-content px-4">
+                                            <div class="sol-home-quote-icon mx-auto mb-4">
                                                 <i class="bi bi-quote"></i>
                                             </div>
-                                            <p class="sol-home-testimonial-text">
-                                                Sharks of Law solved my legal problem in just one call. Quick, reliable,
-                                                and extremely professional!
+                                            <p class="sol-home-testimonial-text mb-4">
+                                                "Sharks of Law solved my legal problem in just one call. Quick, reliable,
+                                                and extremely professional!"
                                             </p>
-                                            <div>
+                                            <div class="sol-home-testimonial-meta">
                                                 <h4 class="sol-home-testimonial-author">Kirsten Gutierrez</h4>
                                                 <p class="sol-home-testimonial-role">Founder K&G Company</p>
                                             </div>
@@ -841,19 +849,21 @@
                                     </div>
                                 </div>
                                 <!-- Slide 2 -->
-                                <div class="carousel-item h-100">
-                                    <div class="sol-home-testimonial-card">
-                                        <img src="img/testimonial.jpg" alt="Testimonial"
-                                            class="sol-home-testimonial-img" style="filter: hue-rotate(45deg);">
-                                        <div class="sol-home-testimonial-content">
-                                            <div class="sol-home-quote-icon">
+                                <div class="carousel-item">
+                                    <div class="sol-home-testimonial-card-centered text-center">
+                                        <div class="sol-home-testimonial-img-wrapper mb-4">
+                                            <img src="https://i.pravatar.cc/150?u=b" alt="Testimonial"
+                                                class="sol-home-testimonial-img">
+                                        </div>
+                                        <div class="sol-home-testimonial-content px-4">
+                                            <div class="sol-home-quote-icon mx-auto mb-4">
                                                 <i class="bi bi-quote"></i>
                                             </div>
-                                            <p class="sol-home-testimonial-text">
-                                                The legal advice I received was top-notch and very easy to understand.
-                                                Highly recommend their services!
+                                            <p class="sol-home-testimonial-text mb-4">
+                                                "The legal advice I received was top-notch and very easy to understand.
+                                                Highly recommend their services for anyone in need of expert counsel."
                                             </p>
-                                            <div>
+                                            <div class="sol-home-testimonial-meta">
                                                 <h4 class="sol-home-testimonial-author">John Doe</h4>
                                                 <p class="sol-home-testimonial-role">CEO Tech Innovations</p>
                                             </div>
@@ -861,16 +871,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Carousel Controls (Hidden but functional for auto-slide) -->
-                            <button class="carousel-control-prev d-none" type="button"
-                                data-bs-target="#solHomeTestimonialCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </button>
-                            <button class="carousel-control-next d-none" type="button"
-                                data-bs-target="#solHomeTestimonialCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            </button>
                         </div>
                     </div>
 
@@ -899,10 +899,10 @@
 
     <!-- Mobile WhatsApp CTA Bar (d-lg-none) -->
     <div class="sol-home-whatsapp-section py-4 text-center d-lg-none"
-        style="background-color: var(--sol-home-bg-light);">
+        style="background-color: #fff;">
         <div class="container-fluid">
-            <a href="https://wa.me/yourlink" class="sol-home-whatsapp-btn d-inline-flex mx-auto" target="_blank">
-                <i class="bi bi-whatsapp"></i> Chat on Whatsapp
+            <a href="https://wa.me/yourlink" class="sol-home-whatsapp-btn-new d-inline-flex mx-auto" target="_blank">
+                <i class="bi bi-whatsapp"></i> Chat with us on WhatsApp
             </a>
         </div>
     </div>
